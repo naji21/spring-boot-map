@@ -1,0 +1,95 @@
+@CHARSET "UTF-8";
+
+@media print {
+	
+	@page {
+		size: A4 landscape;
+		margin: 0;
+	}
+	
+	html, body {
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		height: 100%;
+	}
+	
+	body {
+	/*	margin-top: -69px; */
+		-webkit-print-color-adjust: exact !important;
+	/*	padding: 3mm !important; */
+	}
+	
+	.top-logo, .menu-wrap, .menu-wrap > div, .modal, #mapStudio-main-content, #mapStudio-sub-content, .footer, .note-popover, #shortcut {
+		display: none !important;
+	}
+	/*
+	#sub-contents {
+		width: 297mm;
+		height: 210mm;
+	}
+	
+	#sub-contents > div {
+		height: 100%;
+	}
+	
+	#sub-contents > div > div:last {
+		height: 100%;
+	}
+	
+	.center-container, .right-container {
+		height: 100% !important;
+	}
+	*/
+	.no-print {
+		display: none !important;
+	}
+	
+	#gwpMapPrintWrap {
+/*		position: relative; */
+		position: absolute;
+		top: 0;
+		left: 0;
+
+	/*	height: 100%; */
+	}
+	
+	#gwpMapPrintWrap .print-webmap-container {
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		padding: 10px;
+	/*	width: 100% !important;
+		height: 100% !important;*/
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	
+	#gwpMapPrintWrap .print-map-right {
+		z-index: 3;
+		min-width: 100px !important;
+		background-color: #fff !important;
+		overflow: hidden;
+	}
+	
+	#gwpMapPrintWrap .print-map-right > div {
+		min-width: 100px !important;
+		background-color: #fff !important;
+	}
+	
+	#gwpMapPrintWrap .print-map-right li {
+		text-align: left;
+	}
+	
+	#gwpMapPrintWrap .print-basemap img {
+		max-width: 256px !important;
+	}
+	
+	*, :after, :before {
+		background: none;
+	}
+	
+	.gwp-print-image {
+		display: block;
+	}
+}

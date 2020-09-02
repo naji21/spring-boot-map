@@ -1,0 +1,51 @@
+.mapOverlay-text-wrap {
+    z-index: 1;    
+    opacity: 1;
+    position: absolute;
+}
+
+.mapOverlay-text-wrap.selected {
+    z-index: 10;
+}
+
+.mapOverlay-text-wrap.selected .mapOverlay-text-background {
+    box-shadow: 5px 5px 10px #555; 
+}
+
+.mapOverlay-text-wrap .mapOverlay-text {
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.mapOverlay-text-wrap .mapOverlay-text > div {
+    white-space:pre;
+}
+/*
+.mapOverlay-text-wrap .mapOverlay-image {
+    padding: 10px;
+    position: absolute;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+*/
+
+.mapOverlay-text-wrap .mapOverlay-move-icon.top-left {
+    top: -9px;
+    left: -9px;
+}
+
+.mapOverlay-text-wrap.selected .mapOverlay-move-icon {
+    display: block;
+    cursor: move;
+}
+
+.ol-overlay-container .popover {
+    max-width: none !important;
+}

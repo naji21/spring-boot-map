@@ -1,0 +1,141 @@
+@CHARSET "UTF-8";
+.custom-icon-pop-wrap {
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.custom-icon-pop-wrap .custom-icon-pop-background {
+	background-color: #000;
+	opacity: 0.5;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.custom-icon-pop-wrap .custom-icon-pop-content-wrap {
+	position: absolute;
+	background-color: #12172a;
+	z-index: 2;
+	top: 60px;
+	left: 0;
+	right: 0;
+	width: 483px;
+	padding: 10px;
+	margin: auto;
+    border-radius: 3px;
+}
+
+.custom-icon-pop-wrap .custom-icon-pop-content-wrap .custom-icon-pop-title {
+	font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #202842;
+    color: #9aca3c;
+}
+
+.custom-icon-pop-wrap .custom-icon-pop-content-wrap .custom-icon-pop-list-wrap {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.custom-icon-pop-wrap .custom-icon-pop-content-wrap .custom-icon-pop-list-wrap,
+.custom-icon-pop-wrap .custom-icon-pop-content-wrap .custom-icon-pop-make {
+	width: 100%;
+	height: 160px;
+}
+
+.custom-icon-pop-wrap .custom-icon-pop-make,
+.custom-icon-pop-wrap .btn-wrap.create,
+.custom-icon-pop-wrap .btn-wrap.remove {
+	display: none;
+}
+
+.custom-icon-pop-wrap .custom-icon-pop-make > div {
+	margin-left: 1px;
+	background-color: #fff;
+}
+
+.custom-icon-pop-wrap .custom-icon-pop-list {
+	width: 460px;
+}
+
+.custom-icon-pop-wrap .custom-icon-pop-list .custom-icon-thumb {
+	padding: 5px;
+	border: 1px solid transparent;	
+	float: left;
+	margin: 2px;
+	cursor: pointer;
+	position: relative;
+	background-color: #eee;
+	opacity: 0.7;
+}
+
+.custom-icon-pop-wrap .custom-icon-pop-list .custom-icon-thumb:hover {
+	background-color: #ff846f;
+	opacity: 1;
+}
+
+.custom-icon-pop-wrap .custom-icon-pop-list .custom-icon-thumb.select {
+	background-color: #9aca3c;
+	opacity: 1;
+}
+
+.custom-icon-pop-wrap .custom-icon-pop-list .custom-icon-thumb > div {
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 23px;
+    height: 23px;
+	
+}
+
+.custom-icon-pop-wrap .custom-icon-pop-list .custom-icon-thumb > div.c-icon-remove {
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	background-color: #000;
+	opacity: 0.6;
+	text-align: center;
+	color: #fff;
+	display: none;
+	width: 42px;
+	height: 42px;
+}
+
+.custom-icon-pop-wrap .custom-icon-pop-list .custom-icon-thumb > div.c-icon-remove:hover {
+	opacity: 1;
+}
+
+.custom-icon-pop-wrap .custom-icon-pop-list .custom-icon-thumb > div.c-icon-remove i {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.custom-icon-pop-wrap .custom-icon-pop-list p {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.custom-icon-pop-wrap .btn-wrap {
+	border-top: 1px solid #202842;
+	padding-top: 10px;
+}
+
+.custom-icon-pop-wrap .btn-wrap a {
+	margin: 2px;
+	border-radius: 15px;
+}
+
+.custom-icon-pop-wrap .btn-wrap a.btn-gradient:hover {
+	background-image: linear-gradient(90deg, #ff6b9a 0%, #ff876a 100%);
+    color: #fff !important;
+}
